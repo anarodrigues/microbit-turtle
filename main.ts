@@ -1,58 +1,23 @@
 radio.onReceivedNumberDeprecated(function (receivedNumber) {
     if (receivedNumber == 1) {
-        basic.showLeds(`
-            . . . . .
-            . . . . .
-            . . # . .
-            . . . . .
-            . . . . .
-            `)
         Rover.MotorStopAll(MotorActions.Stop)
     }
     if (receivedNumber == 2) {
-        basic.showLeds(`
-            . . # . .
-            . . # . .
-            # . # . #
-            . # # # .
-            . . # . .
-            `)
         Rover.MotorRunDual(50, 50)
         basic.pause(1000)
         Rover.MotorStopAll(MotorActions.Stop)
     }
     if (receivedNumber == 3) {
-        basic.showLeds(`
-            . . # . .
-            . # # # .
-            # . # . #
-            . . # . .
-            . . # . .
-            `)
         Rover.MotorRunDual(-50, -50)
         basic.pause(1000)
         Rover.MotorStopAll(MotorActions.Stop)
     }
     if (receivedNumber == 4) {
-        basic.showLeds(`
-            . . # . .
-            . . . # .
-            # # # # #
-            . . . # .
-            . . # . .
-            `)
         Rover.MotorRunDual(0, 50)
         basic.pause(1000)
         Rover.MotorStopAll(MotorActions.Stop)
     }
     if (receivedNumber == 5) {
-        basic.showLeds(`
-            . . # . .
-            . # . . .
-            # # # # #
-            . # . . .
-            . . # . .
-            `)
         Rover.MotorRunDual(50, 0)
         basic.pause(1000)
         Rover.MotorStopAll(MotorActions.Stop)
@@ -91,7 +56,6 @@ input.onButtonPressed(Button.B, function () {
         `)
     radio.sendNumber(1)
 })
-// move right
 input.onGesture(Gesture.TiltRight, function () {
     radio.sendNumber(5)
     basic.showLeds(`
