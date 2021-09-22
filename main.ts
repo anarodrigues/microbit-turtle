@@ -62,9 +62,9 @@ radio.onReceivedNumberDeprecated(function (receivedNumber) {
 input.onGesture(Gesture.LogoUp, function () {
     basic.showLeds(`
         . . # . .
-        . # # # .
-        # . # . #
         . . # . .
+        # . # . #
+        . # # # .
         . . # . .
         `)
     radio.sendNumber(3)
@@ -106,9 +106,9 @@ input.onGesture(Gesture.TiltRight, function () {
 input.onGesture(Gesture.LogoDown, function () {
     basic.showLeds(`
         . . # . .
-        . . # . .
-        # . # . #
         . # # # .
+        # . # . #
+        . . # . .
         . . # . .
         `)
     radio.sendNumber(2)

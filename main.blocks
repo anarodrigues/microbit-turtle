@@ -18,15 +18,15 @@
         . . . . .
         `</field><next><block type="radio_datagram_send" id="d8{6VjA3G|XNt`Zx_k./"><value name="value"><shadow type="math_number" id="8ao5Scv^cvvIwsF9sOsK"><field name="NUM">1</field></shadow></value></block></next></block></statement></block><block type="device_gesture_event" id="D%}|-i7$4K~t]QSx[p-T" x="-623" y="227"><field name="NAME">Gesture.LogoDown</field><comment pinned="false" h="80" w="160" relx="10" rely="10">move forward</comment><statement name="HANDLER"><block type="device_show_leds" id="CJUmyx*6mN5Og9UuRdAr"><field name="LEDS">`
         . . # . . 
-        . . # . . 
-        # . # . # 
         . # # # . 
+        # . # . # 
+        . . # . . 
         . . # . .
         `</field><next><block type="radio_datagram_send" id="c%/iazUQTSWT61uM(wR|"><value name="value"><shadow type="math_number" id="?%z=E-{2t.M!9*pwQ3p-"><field name="NUM">2</field></shadow></value></block></next></block></statement></block><block type="device_gesture_event" id="0h+F^nmq9Hy2``Za%~2P" x="-326" y="235"><field name="NAME">Gesture.LogoUp</field><comment pinned="false" h="80" w="160" relx="10" rely="10">move backward</comment><statement name="HANDLER"><block type="device_show_leds" id="SOipW]4}VJMq!_lPduZX"><field name="LEDS">`
         . . # . . 
-        . # # # . 
-        # . # . # 
         . . # . . 
+        # . # . # 
+        . # # # . 
         . . # . .
         `</field><next><block type="radio_datagram_send" id="U$9e]9X,NcjdW/vzPVdE"><value name="value"><shadow type="math_number" id="kUfr?P44K/{C6_]ec2wB"><field name="NUM">3</field></shadow></value></block></next></block></statement></block><block type="radio_on_number" id="WhE}]ciscH?;+8!wV)@M" x="-67" y="236"><field name="HANDLER_receivedNumber" id="J!d]IA!EmLxEMocN_TUQ">receivedNumber</field><statement name="HANDLER"><block type="controls_if" id="E,De}fU:~xpv8NPUMT^/"><value name="IF0"><shadow type="logic_boolean"><field name="BOOL">TRUE</field></shadow><block type="logic_compare" id="Y=9)*UNa|qS4A5PjJ}kp"><field name="OP">EQ</field><value name="A"><shadow type="math_number"><field name="NUM">0</field></shadow><block type="variables_get" id="El[+aq#cYi4V.m8F=jXF"><field name="VAR" id="J!d]IA!EmLxEMocN_TUQ">receivedNumber</field></block></value><value name="B"><shadow type="math_number" id="qt1|L55nBa%`F,j)}=2}"><field name="NUM">1</field></shadow></value></block></value><statement name="DO0"><block type="device_show_leds" id="S,P3p^)_?a1by0R~|qk!"><field name="LEDS">`
         . . . . . 

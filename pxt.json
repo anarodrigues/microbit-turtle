@@ -1,5 +1,5 @@
 {
-    "name": "microbit Radio",
+    "name": "microbit turtle",
     "description": "",
     "dependencies": {
         "core": "*",
